@@ -1,0 +1,71 @@
+html, body {
+    padding: 0%;
+    margin: 0%;
+    background-image: url("../assets/landing-background.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+textarea, input {
+    border-radius: 4px;
+    background-color: #e6ebed;
+}
+
+textarea::placeholder, input::placeholder{
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8398a2;
+}
+
+.buffspace {
+    height: 20vh;
+}
+
+.catchphrase {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    font-family: Bangers;
+    font-size: 5em;
+    font-weight: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.signupbox {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+
+    width: 340px;
+    height: 460px;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+.inputmargin {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.labeltxt {
+    font-family: Bangers;
+    font-size: 1.5em;
+    font-weight: normal;
+    
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
