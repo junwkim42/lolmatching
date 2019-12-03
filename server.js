@@ -22,10 +22,11 @@ app.use(
 
 // Routes
 require("./routes/htmlRoutes")(app);
+require("./routes/authRoutes")(app);
 
 
 //mongooose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lol", { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lolmatch", { useNewUrlParser: true })
     .then(()=>console.log("MongoDB connected"))
     .catch(err => console.log(err));
 
