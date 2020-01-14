@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+var MongoDB_URI = process.env.MONGODB_URI || "mongodb://user1:root1234@ds017582.mlab.com:17582/heroku_b88k79vb"
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -26,7 +27,7 @@ require("./routes/authRoutes")(app);
 
 
 //mongooose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lolmatch", { useNewUrlParser: true })
+mongoose.connect(MongoDB_URI, { useNewUrlParser: true })
     .then(()=>console.log("MongoDB connected"))
     .catch(err => console.log(err));
 
