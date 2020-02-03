@@ -23,4 +23,14 @@ $(document).ready(function() {
         }
       );
     });
+
+    document.getElementById("reguser").addEventListener("click", function (){
+      document.getElementById("reguser").style.opacity = 1.0;
+      document.getElementById("loginuser").style.opacity = 0.5;
+    });
+    
+    document.getElementById("loginuser").addEventListener("click", function(){
+      document.getElementById("loginuser").style.opacity = 1.0;
+      document.getElementById("reguser").style.opacity = 0.5;
+    });
   });

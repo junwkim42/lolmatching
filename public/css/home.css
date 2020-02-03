@@ -8,7 +8,35 @@ html, body{
     margin: 0;
   }
 
-  .wrapper {
+input {
+  width: 300px;
+  height: 44px;
+  border: none;
+  border-bottom: 2px solid #6143df;
+  border-right: 2px solid #6143df;
+  box-sizing: border-box;
+  transform: skewX(-20deg);
+  margin-left: 4vw;
+  margin-bottom: 34px;
+
+}
+
+input::placeholder {
+  font-family: 'Kanit', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.71px;
+  color: #888697;
+
+  transform: skewX(20deg);
+}
+
+
+
+.wrapper {
         display: flex;
         flex-direction: row;
         align-items: stretch;
@@ -75,3 +103,44 @@ html, body{
   letter-spacing: normal;
   color: #ffffff;
 }
+
+.tabs{
+  display: flex; 
+  flex-direction: row;
+
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8a56e3;
+
+  padding-top: 20vh;
+}
+
+.tabs > div{
+  padding-left: 6vw;
+}
+
+.tabs > #loginuser{
+  opacity: 0.5;
+}
+
+.userform > #welcomephrase{
+  font-family: 'Fugaz One', cursive;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3c454a;
+
+  padding-left: 4vw;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+}
+
