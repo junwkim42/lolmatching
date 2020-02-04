@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
-var MongoDB_URI = process.env.MONGODB_URI || "mongodb://user1:root1234@ds017582.mlab.com:17582/heroku_b88k79vb"
+var MongoDB_URI = process.env.MONGODB_URI || "mongodb://user1:root1234@ds061731.mlab.com:61731/heroku_p11zxhkf"
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
