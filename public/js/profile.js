@@ -142,16 +142,18 @@ let api_key = "RGAPI-d4e0afd7-f37b-46d1-9e2e-1a72a857f8f4";
 }
 
 $("#gosearch").on("click", function(){
-    let url = "https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
+    let url = "https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
     let Sumname = document.getElementById("sumname").value;
     if(Sumname){
         url = url + Sumname + "?api_key=" + api_key;
         console.log(url);
-        $.get(url, function(data, response){
-            console.log(data);
-            console.log("===========================");
-            console.log(response);
-        });
+        $.ajax({
+            url: url,
+            method: "GET"
+        })
+        .then(function(reply){
+            console.log(reply);
+        })
     }
 
     
